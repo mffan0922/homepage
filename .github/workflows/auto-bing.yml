@@ -30,6 +30,6 @@ jobs:
         git diff --exit-code || git add . && git commit -am '[bot] update images.json' --allow-empty
     # push 
     - name: push changes
-      uses: ad-m/github-push-action@master
+      uses: ad-m/github-push-action@main
       with:
         github_token: ${{ secrets.GH_TOKEN }}
